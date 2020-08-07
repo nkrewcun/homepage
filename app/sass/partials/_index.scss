@@ -1,0 +1,43 @@
+body {
+    background-color: $primary;
+    color: $text-primary;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: $text-primary;
+}
+
+strong {
+    color: $text-secondary;
+}
+
+h2,
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+section {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $mgBottom;
+    padding: 0px 2rem;
+}
+
+@media screen and (max-width: $mobileWidth) {
+    section {
+        padding: .5rem !important;
+    }
+}

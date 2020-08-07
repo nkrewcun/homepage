@@ -1,0 +1,80 @@
+section#presentation {
+    background-image: url("../../../public/assets/presentation-bg.png");
+    background-size: cover;
+    padding: 6rem 2rem;
+    margin-bottom: $mgBottom;
+    max-width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .image {
+            margin-right: 1rem;
+            height: 380px;
+
+        }
+
+        img {
+            border-radius: 20px;
+            object-fit: cover;
+            width: 280px;
+            height: inherit;
+        }
+
+        h2,
+        h3,
+        p {
+            margin-top: 0px;
+            margin-bottom: .5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $largeScreenWidth) {
+    section#presentation {
+        .container {
+            margin-left: auto;
+        }
+    }
+}
+
+@media screen and (max-width: $mobileWidth) {
+    section#presentation {
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+
+            .image {
+                margin-right: 0px;
+                height: auto;
+                max-height: 380px;
+            }
+
+            .image img {
+                width: auto;
+                max-width: 100%;
+                max-height: inherit;
+            }
+        }
+    }
+}

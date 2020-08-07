@@ -1,0 +1,60 @@
+section#competences {
+
+    .competencesContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-gap: 1rem;
+
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        .competence {
+            background-color: $secondary;
+            box-sizing: border-box;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            p {
+                margin-top: 0px;
+            }
+        }
+
+        .competence img {
+            width: 80px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: all .3s ease-in-out;
+
+        }
+
+        .competence:hover img {
+            filter: grayscale(0%);
+        }
+    }
+}
+
+@media screen and (max-width: $largeScreenWidth) {
+    section#competences {
+        .competencesContainer {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: $mobileWidth) {
+    section#competences {
+        .competencesContainer {
+            grid-template-columns: repeat(1, 1fr);
+
+            .competence img {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
