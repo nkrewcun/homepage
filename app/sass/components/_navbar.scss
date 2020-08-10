@@ -108,15 +108,15 @@ nav .navbarToggler {
 nav .navbarToggler.open {
 
     .navbarTogglerButton {
-        transform: translateX(40px);
+        transform: translateX(-40px);
         background: transparent;
 
         &::before {
-            transform: rotate(45deg) translate(-28px, 28px);
+            transform: rotate(45deg) translate(28px, -28px);
         }
 
         &::after {
-            transform: rotate(-45deg) translate(-28px, -28px);
+            transform: rotate(-45deg) translate(28px, 28px);
         }
     }
 }

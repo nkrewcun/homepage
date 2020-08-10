@@ -1,0 +1,31 @@
+#scrollToTop {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    color: $text-primary;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}
+
+#scrollToTop:hover {
+    background-color: $text-tertiary;
+    color: $dark;
+}
+
+@media screen and (max-width: $mobileWidth) {
+    #scrollToTop {
+        background-color: $text-tertiary;
+        color: $dark;
+    }
+}
