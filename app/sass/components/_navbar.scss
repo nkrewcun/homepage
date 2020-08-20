@@ -1,10 +1,14 @@
 nav.navbar {
     padding: 1rem;
     text-transform: uppercase;
-    background-color: $secondary;
+    background-color: $tertiary;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
 
     .navbarMenu {
         display: flex;

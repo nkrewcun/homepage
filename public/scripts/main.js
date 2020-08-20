@@ -1,11 +1,20 @@
 const navbarTogglerBtn = document.querySelector('.navbarToggler');
 const scrollToTopBtn = document.getElementById('scrollToTop');
+const navbarMenu = document.querySelector('.navbarMenu');
+const navbarBtns = document.querySelectorAll('.navbarMenu a');
 
 navbarTogglerBtn.addEventListener('click', () => {
-    const navbarMenu = document.querySelector('.navbarMenu');
     navbarTogglerBtn.classList.toggle('open');
     navbarMenu.classList.toggle('show');
 });
+
+navbarBtns.forEach((navbarBtn) => {
+    navbarBtn.addEventListener('click', () => {
+        navbarTogglerBtn.classList.toggle('open');
+        navbarMenu.classList.toggle('show');
+    });
+});
+
 
 window.onscroll = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

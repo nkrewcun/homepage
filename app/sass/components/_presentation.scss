@@ -1,7 +1,7 @@
 section#presentation {
     background-image: url("../../../public/assets/presentation-bg.png");
     background-size: cover;
-    padding: 6rem 2rem;
+    padding: calc(6rem + 72px) 2rem 6rem 2rem;
     margin-bottom: $mgBottom;
     max-width: 100%;
 
@@ -64,6 +64,8 @@ section#presentation {
 
 @media screen and (max-width: $mobileWidth) {
     section#presentation {
+
+        padding: calc(.5rem + 72px) .5rem .5rem .5rem;
 
         .container {
             flex-direction: column;
