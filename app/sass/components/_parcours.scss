@@ -25,11 +25,26 @@
         }
     }
 
+    >a {
+        display: inline-block;
+        position: relative;
+        color: $text-primary;
+        padding: 1rem;
+        background-color: $secondary;
+        border: 5px solid $parcoursBorders;
+        font-size: 1.2rem;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+            color: $text-secondary;
+        }
+    }
+
     /* The actual timeline (the vertical ruler) */
     .timeline {
         position: relative;
         max-width: 1080px;
-        margin: 0 auto;
+        margin: 0 auto .5rem auto;
     }
 
     /* The actual timeline (the vertical ruler) */
@@ -51,6 +66,10 @@
         background-color: inherit;
         width: 50%;
         box-sizing: border-box;
+
+        &:last-of-type {
+            padding-bottom: 3rem;
+        }
     }
 
     /* The circles on the timeline */
