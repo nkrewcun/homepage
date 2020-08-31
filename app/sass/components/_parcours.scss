@@ -2,10 +2,27 @@
 
     h3 {
         font-size: 1.5rem;
+        margin-top: .5rem;
+        margin-bottom: .9rem;
+
+        i.fas {
+            margin-right: .25rem;
+        }
     }
 
     p {
         margin: .5rem 0px;
+
+        &.date {
+            color: $text-secondary;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        &.loc {
+            font-style: italic;
+            font-weight: 600;
+        }
     }
 
     /* The actual timeline (the vertical ruler) */
@@ -69,9 +86,9 @@
         width: 0;
         z-index: 1;
         right: 30px;
-        border: medium solid $secondary;
+        border: medium solid $parcoursBorders;
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent $secondary;
+        border-color: transparent transparent transparent $parcoursBorders;
     }
 
     /* Add arrows to the right container (pointing left) */
@@ -83,9 +100,9 @@
         width: 0;
         z-index: 1;
         left: 30px;
-        border: medium solid $secondary;
+        border: medium solid $parcoursBorders;
         border-width: 10px 10px 10px 0;
-        border-color: transparent $secondary transparent transparent;
+        border-color: transparent $parcoursBorders transparent transparent;
     }
 
     /* Fix the circle for containers on the right side */
@@ -98,6 +115,7 @@
         padding: 20px 30px;
         background-color: $secondary;
         position: relative;
+        border: 5px solid $parcoursBorders;
     }
 }
 
@@ -121,9 +139,9 @@
         /* Make sure that all arrows are pointing leftwards */
         .container::before {
             left: 60px;
-            border: medium solid $secondary;
+            border: medium solid $parcoursBorders;
             border-width: 10px 10px 10px 0;
-            border-color: transparent $secondary transparent transparent;
+            border-color: transparent $parcoursBorders transparent transparent;
         }
 
         /* Make sure all circles are at the same spot */
