@@ -143,6 +143,10 @@
 
     #parcours {
 
+        .timeline {
+            margin-bottom: 3rem;
+        }
+
         /* Place the timelime to the left */
         .timeline::after {
             left: 31px;
@@ -153,6 +157,10 @@
             width: 100%;
             padding-left: 70px;
             padding-right: 25px;
+
+            &:last-of-type {
+                padding-bottom: 10px;
+            }
         }
 
         /* Make sure that all arrows are pointing leftwards */
