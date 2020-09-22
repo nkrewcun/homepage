@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $secondary;
-    color: $text-primary;
+    background-color: $background-2;
+    color: $light;
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -19,13 +19,13 @@
 }
 
 #scrollToTop:hover {
-    background-color: $text-tertiary;
+    background-color: $secondary;
     color: $dark;
 }
 
 @media screen and (max-width: $mobileWidth) {
     #scrollToTop {
-        background-color: $text-tertiary;
+        background-color: $secondary;
         color: $dark;
     }
 }
